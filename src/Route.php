@@ -41,7 +41,6 @@ class Route
             },
             $segments
         );
-        // return array_values(array_filter($params));
         return array_filter($params);
     }
 

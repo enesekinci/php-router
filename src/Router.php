@@ -162,9 +162,6 @@ final class Router
         $routeSegments = explode('/', $route);
         $uriSegments = explode('/', $uri);
 
-        // dd($uri, $route, [$routeSegments, $uriSegments]);
-
-        // if ($uri === $route || $route === '*')
         if ($uri === $route || $route === '*')
             return true;
 
@@ -230,7 +227,7 @@ final class Router
         };
 
         $handler = null;
-        dd($middlewares);
+
         foreach (array_reverse($middlewares) as $key => $middleware) {
             $middleware = new MiddlewareGroup::$middlewares[$middleware]();
             if ($key === 0) {
