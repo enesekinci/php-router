@@ -1,0 +1,24 @@
+{
+    "name": "enesekinci/php-router",
+    "description": "the router like laravel router that we can use in our own projects but it's so basic",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "enesekinci",
+            "email": "enes.eknc.96@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.3|^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "EnesEkinci\\PhpRouter\\": "src/"
+        },
+        "files": [
+            "src/Helpers/functions.php"
+        ]
+    }
+}
