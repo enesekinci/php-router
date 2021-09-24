@@ -29,9 +29,9 @@ MiddlewareGroup::middleware([
 
 Router::redirect('/galatasaray/{slug}', '/');
 
-// Router::get('/*', function () {
-//     dd("*****");
-// });
+Router::get('/*', function () {
+    dd("*****");
+});
 
 Router::prefix('/php')->name('php.')->middleware('test', 'json')->group(function () {
     Router::get('/group-1', function () {
